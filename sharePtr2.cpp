@@ -20,7 +20,7 @@ std::shared_ptr<Node<T>> makeLink(const std::vector<T>& v)
     std::shared_ptr<Node<T>> head, lastNode; 
     for(auto e : v) {
         std::shared_ptr<Node<T>> pNode = std::make_shared<Node<T>>(e, nullptr);
-        if(lastNode) {
+        if(lastNode != nullptr) {
             lastNode->next =  pNode;
             lastNode = pNode;
         } else {
