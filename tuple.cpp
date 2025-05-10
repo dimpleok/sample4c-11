@@ -3,7 +3,7 @@
 #include <iostream>
 
 template <typename T>
-void printTuple(T t)
+void printTuple(const T& t)
 {
     int size = std::tuple_size<T>::value;
     std::cout << "tuple size " << size << std::endl;
