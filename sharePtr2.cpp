@@ -15,7 +15,7 @@ struct Node {
 };
 
 template <class T>
-std::shared_ptr<Node<T>> makeLink(std::vector<T> v)
+std::shared_ptr<Node<T>> makeLink(const std::vector<T>& v)
 {
     std::shared_ptr<Node<T>> head, lastNode; 
     for(auto e : v) {
