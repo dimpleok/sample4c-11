@@ -2,10 +2,10 @@
 #include <string>
 #include <type_traits>
 
-template <typename  T>
+template <typename T>
 T concat(const T& a, const T& b)
 {
-    static_assert( not std::is_integral<T>::value, "Integer is invalid"); 
+    static_assert(not std::is_integral<T>::value, "Integer is invalid");
     return a + " " + b;
 }
 
